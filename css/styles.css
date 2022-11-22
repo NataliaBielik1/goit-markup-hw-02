@@ -1,3 +1,52 @@
-body{
-    color: red;
+
+.list{
+    list-style: none;
 }
+
+body{
+   color: var(-primery-text-color);
+   background-color: var(--bg-color);
+}
+:root{
+    --primery-text-color: #212121;
+    --secondary-text-color: #757575;
+    --bg-color: #F5F5F5;
+    --secondary-bg-color: #2F303A;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+}
+/* лого */
+.logo-span{
+    color: -var(-accent-color);
+}
+.site-nav{
+    color: var(--primery-text-color);
+}
+.site-nav.link.current{
+    color: var(--accent-color);
+}
+.info-nav{
+    color: var(--secondary-text-color);
+}
+.site-nav.link:hover,
+.site-nav.link:focus,
+.info-nav.link:hover,
+.info-nav.link:focus{
+    color: var(--accent-color);
+}
+.button.primary{
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+/* hero */
+.hero{
+    background-color: var(--secondary-bg-color);
+}
+.hero-title{
+    color: var(-white-color);
+}
+/* features */
+.features.title{
+    color: var(-primery-text-color);
+}
+/* work */
