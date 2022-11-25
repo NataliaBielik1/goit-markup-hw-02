@@ -10,6 +10,7 @@ body{
 }
 :root{
     --primery-text-color: #212121;
+    --logo-text-color: #000000;
     --secondary-text-color: #757575;
     --bg-color: #F5F5F5;
     --secondary-bg-color: #2F303A;
@@ -21,6 +22,8 @@ body{
     font-family: Raleway;
     font-size: 26px;
     line-height: 1.2;
+    font-weight: 700;
+    color: var(--logo-text-color);
 }
 .logo-span{
     color: -var(-accent-color);
@@ -66,9 +69,10 @@ button{
 }
 .hero-title{
     color: var(--white-color);
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 900;
+    font-size: 44px;
     line-height: 1.87;
+    text-align: center;
 }
 /* features */
 .features.title{
@@ -80,3 +84,7 @@ button{
 .features
 
 /* work */
+
+.name{
+    text-align: center;
+}
