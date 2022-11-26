@@ -16,17 +16,20 @@ body{
     --secondary-bg-color: #2F303A;
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
+    --contact-color: rgba(255, 255, 255, 0.6);
+    --button-color:#F5F4FA;
 }
 /* лого */
 .logo{
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 26px;
     line-height: 1.2;
     font-weight: 700;
     color: var(--logo-text-color);
+    text-decoration: none;
 }
-.logo-span{
-    color: -var(-accent-color);
+ .accent{
+    color: var(--accent-color);
 }
 .site-nav{
     color: var(--primery-text-color);
@@ -81,10 +84,74 @@ button{
     font-size: 14px;
     line-height: 1.14;
 }
-.features
+/* Portfolio */
+.button {
+    width: 73px;
+    height: 38px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
 
-/* work */
+.button.secondary {
+    width: 103px;
+    height: 38px;
+    color: var(--primery-text-color);
+    background-color: var(--button-color);
+}
+.work-list{
+    list-style-type: none;
+    text-decoration: none;
+}
+.work-list-title{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(-primery-text-color);
+    line-height: 2;
+}
+.work-list-text{
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--secondary-text-color);
+}
+
+
+/* Наша команда */
 
 .name{
     text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--primery-text-color);
+    line-height: 1.18;
+}
+p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondary-text-color);
+    line-height: 1.18;
+}
+/* footer */
+.footer{
+    background-color: var(--secondary-bg-color);
+    font-style: normal;
+}
+.footer-list{
+    font-style: normal;
+    list-style-type: none;
+}
+.contact-list{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.adress{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.contact{
+    color: var(--contact-color);
+    text-decoration: none;
 }
