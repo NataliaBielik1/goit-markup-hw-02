@@ -1,91 +1,222 @@
-
-.list{
-    list-style: none;
-}
-
-body{
-   color: var(-primery-text-color);
-   background-color: var(--bg-color);
-   font-family: Roboto, sans-serif; 
-}
 :root{
     --primery-text-color: #212121;
-    --logo-text-color: #000000;
-    --secondary-text-color: #757575;
-    --bg-color: #F5F5F5;
-    --secondary-bg-color: #2F303A;
-    --accent-color: #2196F3;
     --white-color: #FFFFFF;
+    --logo-text-color: #000000;
+    --accent-color: #2196F3;
+    --secondary-text-color: #757575;
+    --secondary-bg-color: #2F303A;
     --contact-color: rgba(255, 255, 255, 0.6);
-    --button-color:#F5F4FA;
+    --bg-port-button-secondary: #F5F4FA;
 }
-/* лого */
-.logo{
-    font-family: Raleway, sans-serif;
-    font-size: 26px;
+.list{
+    list-style: none;
+} 
+
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primery-text-color);
+    background-color: var(--white-color);
     line-height: 1.2;
+}
+
+/* header */
+.logo{
+    font-family: Raleway, raleway;
     font-weight: 700;
-    color: var(--logo-text-color);
+    font-size: 26px;
+    color: var(--accent-color);
     text-decoration: none;
 }
- .accent{
-    color: var(--accent-color);
+
+.logo-span{
+    color: var(--logo-text-color);
 }
-.site-nav{
-    color: var(--primery-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-        
-}
-.site-nav.link.current{
-    color: var(--accent-color);
-}
-.info-nav{
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-}
-.link{
+
+.link {
     color: inherit;
+    text-decoration: none;
 }
-.link:hover{
-    color: var(--accent-color);
+
+.site-nav{
+    font-weight: 500;
+    color: var(-primery-text-color);
+    letter-spacing: 0.02em;
 }
+
+.info-nav{
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .info-nav .link:hover,
 .info-nav .link:focus{
     color: var(--accent-color);
 }
-button{
-    cursor: pointer;
+
+/* hero */
+.hero{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+    color: var(--white-color);
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button{
+    width: 152px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* portfolio */
+.portfolio-button{
+    width: 73px;
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+.portfolio-button-secondary{
+    width: 125px;
+    height: 38px;
+    color: var(--primery-text-color);
+    background-color: var(--bg-port-button-secondary);
+}
+.portfolio-button-secondary:hover,
+.portfolio-button-secondary:focus{
+    background-color: var(--accent-color);
+}
+
+.work-list-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primery-text-color);
+}
+.work-list-text{
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+
+/* features */
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.features-list-title{
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features-text{
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.doing-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+/* team */
+.team-title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+}
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+.team-text{
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--secondary-text-color);
+}
+.team-list-box{
+    background-color: var(--white-color);
+
+}
+
+/* footer */
+.footer{
+    background-color: var(--secondary-bg-color);
+}
+.link-adress{
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    text-decoration: none;
+}
+.contact{
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+    text-decoration: none;
+}
+/* .list{
+    list-style: none;
+}
+
+
+
+/* лого */
+
+ /* .accent{
+    color: var(--accent-color);
+}
+
+
+.link{
+    color: inherit;
+} 
+
+/* button{
+    cursor: pointer; 
 }
 .button.primary{
     color: var(--white-color);
     background-color: var(--accent-color);
 }
-/* hero */
-.hero{
-    background-color: var(--secondary-bg-color);
-}
-.hero-title{
-    color: var(--white-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.87;
-    text-align: center;
-}
-/* features */
-.features.title{
-    color: var(-primery-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-}
+
+
 /* Portfolio */
-.button {
+/* .button {
     width: 73px;
     height: 38px;
     color: var(--white-color);
@@ -112,27 +243,12 @@ button{
     font-size: 16px;
     line-height: 1.87;
     color: var(--secondary-text-color);
-}
+} */
 
 
-/* Наша команда */
 
-.name{
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--primery-text-color);
-    line-height: 1.18;
-}
-p{
-    text-align: center;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--secondary-text-color);
-    line-height: 1.18;
-}
 /* footer */
-.footer{
+/* .footer{
     background-color: var(--secondary-bg-color);
     font-style: normal;
 }
@@ -153,5 +269,5 @@ p{
 }
 .contact{
     color: var(--contact-color);
-    text-decoration: none;
-}
+    text-decoration: none; */
+
