@@ -7,6 +7,7 @@
     --secondary-bg-color: #2F303A;
     --contact-color: rgba(255, 255, 255, 0.6);
     --bg-port-button-secondary: #F5F4FA;
+    --bg-team-section-color: #F5F4FA;
 }
 .list{
     list-style: none;
@@ -15,7 +16,6 @@
 body{
     font-family: Roboto, sans-serif;
     font-size: 14px;
-    font-weight: 400;
     color: var(--primery-text-color);
     background-color: var(--white-color);
     line-height: 1.2;
@@ -30,6 +30,9 @@ body{
     text-decoration: none;
 }
 
+.header-span{
+    color: var(--logo-text-color);
+}
 .logo-span{
     color: var(--logo-text-color);
 }
@@ -57,22 +60,26 @@ body{
 .info-nav .link:focus{
     color: var(--accent-color);
 }
+.current{
+    color: var(--accent-color);
+}
 
 /* hero */
 .hero{
+    background-color: var(--secondary-bg-color);
+}
+
+.hero-title{
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3;
     color: var(--white-color);
-    background-color: var(--secondary-bg-color);
-    text-align: center;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .button{
-    width: 152px;
-    height: 30px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -80,10 +87,19 @@ body{
     background-color: var(--accent-color);
 }
 
+.button:hover,
+.button:focus{
+    color: var(--accent-color);
+    background-color: var(--white-color);
+}
+
+
 /* portfolio */
+
+.portfolio-list{
+    cursor: pointer;
+}
 .portfolio-button{
-    width: 73px;
-    height: 38px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -101,8 +117,9 @@ body{
 .portfolio-button-secondary:hover,
 .portfolio-button-secondary:focus{
     background-color: var(--accent-color);
+    color: var(--white-color);
 }
-
+/* work */
 .work-list-title{
     font-weight: 700;
     font-size: 18px;
@@ -133,6 +150,7 @@ body{
 }
 .features-list-title{
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -152,21 +170,28 @@ body{
 }
 
 /* team */
+
+.team{
+    background-color: var(--bg-team-section-color);
+}
 .team-title{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
 }
+
 .team-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
 }
 .team-text{
     font-size: 16px;
     line-height: 1.18;
     color: var(--secondary-text-color);
+    text-align: center;
 }
 .team-list-box{
     background-color: var(--white-color);
@@ -176,6 +201,10 @@ letter-spacing: 0.03em;
 /* footer */
 .footer{
     background-color: var(--secondary-bg-color);
+}
+
+.logo-span{
+    color: var(--white-color);
 }
 .link-adress{
     line-height: 1.7;
@@ -188,6 +217,10 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
     color: var(--contact-color);
     text-decoration: none;
+}
+
+.footer-list{
+    font-style: normal;
 }
 /* .list{
     list-style: none;
